@@ -1,1 +1,23 @@
+from numpy import sqrt, arange, exp, pi
+from matplotlib import pyplot, ticker
 
+plot = pyplot.figure()
+ax = plot.add_axes([0,0,1,1])
+ax.set(ylim = [0,1], xlim = [-5,5])
+ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+ax.yaxis.set_major_locator(ticker.MultipleLocator(.1))
+sigm=[0.2,1.0,5.0,0.5]
+mu=[0,0,0,-2]
+col=['red','lime','blue','magenta']
+x=arange(-5,5,0.001)
+for i in range(0,4):
+    result=(1/(sqrt(sigm[i])*sqrt(2*pi))*(exp(-((x-mu[i])**2)/(2*sigm[i]))))
+    label=str('μ = '+str(mu[i])+r', $σ^2=$'+str(sigm[i]))
+    ax.plot(x,result,color=col[i],lw=1,label=label)
+    ax.legend()
+pyplot.legend(edgecolor='none', labelspacing=0)
+ax.tick_params(axis='both', which='major',
+                top=True, right=True,
+                direction='in', length=5, width=2, colors='black')
+for axis in ['top','bottom','left','right']:
+  ax.spines[axis].set_linewidth(2)
