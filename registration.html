@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" httpequiv="Content-Type">
+<title>WePython</title>
+<link rel="stylesheet" href="css/style2.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.html">Главная</a>
+		</div>
+		<div>
+			<a href="registration.html">Регистрация</a>
+		</div>
+		<div>
+			<a href="index.html" ><img src="img/logo.png" width="100px" height="100px" /></a>
+		</div>
+		<div>
+			<a href="index.html#programm">Программа</a>
+		</div>
+		<div>
+			<a href="index.html#about">О нас</a>
+		</div>
+	</header>
+	<form action="reg.php" method="POST">
+		<section class="container">
+			<div class="line"></div>
+			<div class="name">
+				<div class="title">
+					<p>ФИО:</p>
+				</div>
+				<div class="form">
+					<input name= "fio" type="text" required="required" placeholder="Иванов Иван Иванович" class="input_form">
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="phone">
+				<div class="title">
+					<p>Номер телефона:</p>
+				</div>
+				<div class="form">
+					<input name= "ph_number" type="tel" required="required" pattern="+7(911)XXX-XXX" placeholder="+7(911)XXX-XХ-XX" class="input_form">
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="mail">
+				<div class="title">
+					<p>email:</p>
+				</div>
+				<div class="form">
+					<input name="email" type="email" required="required" placeholder="guap@mail.ru" class="input_form">
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="birth">
+				<div class="title">
+					<p>дата рождения:</p>
+				</div>
+				<div class="form">
+					<input name="dateBirth" type="date" placeholder="01-01-1998" class="input_form">
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="sex">
+				<div class="title">
+					<p>пол:</p>
+				</div>
+				<div class="form">
+				<div class="form_radio_btn">
+					<input name= "sex" id="radio-1" type="radio" name="radio" value="1" checked>
+					<label for="radio-1">Мужской</label>
+				</div>
+				 
+				<div class="form_radio_btn">
+					<input name= "sex" id="radio-2" type="radio" name="radio" value="0">
+					<label for="radio-2">Женский</label>
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="education">
+				<div class="title">
+					<p>ваше образование:</p>
+				</div>
+				<div class="form">
+					<select name="status_edu">
+					<option>Среднее</option>
+					<option>Среднее специальное</option>
+					<option>Неполное высшее</option>
+					<option>Неоконченное высшее</option>
+					<option>Высшее</option>
+					</select>
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="city">
+				<div class="title">
+					<p>город:</p>
+				</div>
+				<div class="form">
+					<select name= "city">
+					<option>Москва</option>
+					<option>Санкт-Петербург</option>
+					<option>Нижний Новгород</option>
+					<option>Другой</option>
+					</select>
+				</div>
+			</div>
+			<div class="line"/></div>
+			<div class="confirm">
+				<button>Отправить</button>
+			</div>
+			<div class="line"/></div>
+		</section>
+	</form>
+	<footer>
+		<a name="about"></a>
+		<div class="footer_logo">
+		<a href="index.html" ><img src="img/logo.png" width="100px" height="100px" class="footer_logo_img"/></a>
+		</div>
+		<div class="about" name="about">
+			<div class="wepython">
+				<p>Вебинар по программированию WePython</p>
+			</div>
+			<div class="contact">
+				<p>EMAIL: vdovenko_00@mail.ru ivanoslapovskiy@gmail.com</p>
+			</div>
+			<div class="copyright">
+				<p>© 2021 СТУДЕНТЫ ГРУППЫ 4816: ВДОВЕНКО ЕВГЕНИЙ, ОСЛАПОВСКИЙ ИВАН</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

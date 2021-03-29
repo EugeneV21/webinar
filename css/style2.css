@@ -1,0 +1,302 @@
+@font-face {
+  font-family: Bebas;
+  src: url(../fonts/Bebas.otf);
+}
+
+body{
+	background-color: #1d1d1d;
+	margin:0;  
+}
+
+header{
+	width: 1000px;
+	height: 150px;
+	background-color: #282828;
+	margin: 0 auto;
+}
+
+header div{
+	width: 200px;
+	height: 150px;
+	display: block;
+	float:left;
+	text-align: center;
+}
+
+header div a{
+	font: 45px Bebas;
+	color:#ffffff;
+	line-height: 150px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+	text-decoration: none;
+}
+
+header div a img{
+	margin-top: 20px;
+}
+
+.container{
+	width:1000px;
+	height: 935px;
+	background-color: #3a3a3a;
+	margin: 0 auto;	
+}
+
+footer{
+	width: 1000px;
+	height: 170px;
+	background-color: #000000;
+	margin: 0 auto;
+}
+
+.footer_logo{
+	width: 150px;
+	height: 150px;
+	display: block;
+	float:left;
+	text-align: center;
+}
+
+.footer_logo_img{margin-top: 25px;}
+
+.about{
+	width: 850px;
+	height: 150px;
+	display: block;
+	float:left;
+}
+
+.wepython{
+	width: 425px;
+	height: 100px;
+	display: block;
+	float:left;
+}
+
+.contact{
+	width: 425px;
+	height: 100px;
+	display: block;
+	float:left;
+}
+
+.copyright{
+	width: 850px;
+	height: 50px;
+	display: block;
+	float:left;
+}
+
+.wepython p{
+	font: 35px Bebas;
+	text-align: center;
+	margin: auto;
+	color: #ffffff;
+	text-shadow: #000000 3px 3px 2px;	
+	margin-top: 15px;
+}
+
+.contact p{
+	font: 35px Bebas;
+	text-align: center;
+	margin: auto;
+	color: #ffffff;
+	text-shadow: #000000 3px 3px 2px;	
+	margin-top: 15px;
+}
+
+.copyright p{
+	font: 25px Bebas;
+	text-align: center;
+	margin: auto;
+	color: #ffffff;
+	text-shadow: #000000 3px 3px 2px;
+	margin-top: 15px;
+}
+
+.name{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.phone{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.mail{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.birth{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.sex{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.education{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.city{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;
+}
+
+.confirm{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;
+}
+
+.line{
+	width: 1000px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.title{
+	width: 400px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.form{
+	width: 600px;
+	height: 55px;
+	display: block;
+	float:left;
+	margin: 0 auto;	
+}
+
+.title p{
+	font: 45px Bebas;
+	text-align: right;
+	margin: auto;
+	margin-top: 5px;
+	color: #ffffff;
+	text-shadow: #000000 3px 3px 2px;
+}
+
+.input_form{
+  width:400px;
+  height:55px;
+  font: 45px Bebas;
+  margin-left: 25px;
+  border:0;
+  padding-left: 10px;
+  background-color: #282828;
+  color: #ffffff;
+}
+
+*:focus {outline: none;}
+
+.form_radio_btn {
+	display: inline-block;
+	margin-left: 25px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border-radius: 6px;
+	user-select: none;
+	background: #282828;
+	color: #ffffff;
+	height: 55px;
+	font: 35px Bebas;
+	padding-top: 10px;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: #f79754;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+	color: #ffffff;
+}
+ 
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #282828;
+	color: #ffffff;
+}
+
+select{
+  width:400px;
+  height:55px;
+  font: 45px Bebas;
+  margin-left: 25px;
+  border:0;
+  padding-left: 10px;
+  background-color: #282828;
+  color: #ffffff;
+}
+
+button{
+	height: 55px;
+	font: 45px Bebas;
+	text-align: center;
+	background: #f79754;
+	color: #ffffff;	
+	border: none;
+	border-radius: 12px;
+	position: relative;
+	left: 40%;
+}
+
+button:hover {background-color: #f79754;}
+
+button:active {
+  background-color: #f79754;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.foo{
+	width: 1000px;
+	color: #ffffff;
+	font: 45px Bebas;
+	text-align: center;
+}
